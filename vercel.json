@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/projects/:slug",
+      "source": "/projects/:path*",
       "destination": "/index.html"
     }
   ],
