@@ -1,11 +1,11 @@
 # Michael Y Portfolio
 
-A clean personal portfolio for research projects, apps, chess analysis, and useful experiments.
+Personal portfolio for research reports, apps, chess tools, and web projects.
 
 ## Deploy
 
-Deploy the folder as a static Vercel project. `vercel.json` routes `/projects/:slug` back to `index.html`, so project detail URLs work on any connected Vercel domain.
+Deploy the folder as a static Vercel project.
 
 ## Customize
 
-Project cards and detail routes are defined in `index.html` and `script.js`. External project links are wired only when there is a verified public destination, and outbound links open in a new tab with `rel="noreferrer"`.
+Project cards are defined in `index.html`. Each card links directly to its public project page, store listing, or deployed app.

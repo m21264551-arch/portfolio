@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Michael Y's portfolio of research projects, apps, chess analysis, and personal tools."
+      content="Michael Y's portfolio of research reports, apps, chess tools, and projects."
     />
     <meta name="theme-color" content="#f7f8fb" />
     <meta property="og:title" content="Michael Y - Portfolio" />
     <meta
       property="og:description"
-      content="Research projects, apps, chess analysis, and useful experiments."
+      content="Research reports, apps, chess tools, and projects by Michael Y."
     />
     <meta property="og:type" content="website" />
     <title>Michael Y - Portfolio</title>
@@ -24,397 +24,266 @@
   <body>
     <div class="page-shell">
       <header class="topbar" aria-label="Primary">
-        <a class="brand" href="/" data-route aria-label="Michael Y home">
+        <a class="brand" href="/" aria-label="Michael Y home">
           <span class="brand-mark" aria-hidden="true">MY</span>
           <span>Michael Y</span>
         </a>
         <nav class="topnav">
-          <a href="/#projects" data-route>Projects</a>
-          <a href="/#research" data-route>Research</a>
-          <a href="/#contact" data-route>Contact</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      <main id="top">
+      <main>
         <section class="profile-hero" aria-labelledby="profile-title">
-          <div class="profile-card">
-            <div class="avatar" aria-hidden="true">MY</div>
-            <div class="profile-copy">
-              <p class="handle">@michaely</p>
-              <h1 id="profile-title">Research, systems, and useful AI tools.</h1>
-              <p class="summary">
-                A personal project hub for research experiments, product prototypes,
-                chess tooling, CCT Chess, Northmate, and the small tools that connect them.
-              </p>
-              <div class="profile-actions" aria-label="Profile links">
-                <a class="button primary" href="/#projects" data-route>Projects</a>
-                <a class="button" href="/#research" data-route>Research</a>
-                <a class="button" href="/#contact" data-route>Contact</a>
-              </div>
+          <div class="avatar" aria-hidden="true">MY</div>
+          <div class="profile-copy">
+            <p class="handle">@michaely</p>
+            <h1 id="profile-title">Michael Y</h1>
+            <p class="summary">Research reports, apps, chess tools, and web projects.</p>
+            <div class="profile-links" aria-label="Profile links">
+              <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
+              <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
-
-          <dl class="stats-grid" aria-label="Portfolio overview">
-            <div>
-              <dt>Focus</dt>
-              <dd>Research + apps</dd>
-            </div>
-            <div>
-              <dt>Live routes</dt>
-              <dd>Vercel + stores</dd>
-            </div>
-            <div>
-              <dt>Format</dt>
-              <dd>Clean project cards</dd>
-            </div>
-          </dl>
         </section>
 
-        <section class="toolbar" aria-label="Project controls">
-          <div class="tabs" role="tablist" aria-label="Project categories">
-            <button class="tab is-active" type="button" data-filter="all">All</button>
-            <button class="tab" type="button" data-filter="research">Research</button>
-            <button class="tab" type="button" data-filter="apps">Apps</button>
-            <button class="tab" type="button" data-filter="analysis">Analysis</button>
-            <button class="tab" type="button" data-filter="personal">Personal</button>
-          </div>
-          <label class="search-box">
-            <span class="sr-only">Search projects</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M10.8 5.2a5.6 5.6 0 1 1 0 11.2 5.6 5.6 0 0 1 0-11.2Zm0 1.7a3.9 3.9 0 1 0 0 7.8 3.9 3.9 0 0 0 0-7.8Zm4.3 8 4.1 4.1-1.2 1.2-4.1-4.1 1.2-1.2Z" />
-            </svg>
-            <input id="project-search" type="search" placeholder="Search projects" autocomplete="off" />
-          </label>
-        </section>
-
-        <section id="projects" class="project-section" aria-labelledby="projects-title">
+        <section id="projects" class="work-section" aria-labelledby="projects-title">
           <div class="section-heading">
+            <p class="eyebrow">Portfolio</p>
             <h2 id="projects-title">Projects</h2>
-            <p>Clean boxes, quick context, and direct links for the work that is worth opening.</p>
           </div>
 
-          <div class="project-grid" id="project-grid">
-            <article
-              class="project-card project-cnn pinned"
-              data-category="research"
-              data-keywords="research cnn depth width cifar iso parameter neural networks"
-              data-slug="cnn-depth-width"
-            >
-              <div class="card-topline">
-                <span class="project-type research">Research</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/cnn-depth-width" data-route>CNN Depth and Width Study</a></h3>
-              <p>Interactive research report on fixed-parameter CNN depth and width tradeoffs across CIFAR datasets.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>CNNs</span>
-                <span>CIFAR</span>
-                <span>Research</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/cnn-depth-width" data-route>Open</a>
-                  <a href="https://iso-parameter-cnn-depth-width.vercel.app" target="_blank" rel="noreferrer">Live</a>
+          <section id="research" class="project-group" aria-labelledby="research-title">
+            <h3 id="research-title">Research</h3>
+            <div class="project-grid">
+              <a
+                class="project-card project-cnn"
+                href="https://iso-parameter-cnn-depth-width.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open CNN Depth and Width Study"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Research</span>
+                  <span class="visibility">Report</span>
                 </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-pathmnist"
-              data-category="research"
-              data-keywords="pathmnist histology classification random forest mlp cnn"
-              data-slug="pathmnist-histology"
-            >
-              <div class="card-topline">
-                <span class="project-type research">Research</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/pathmnist-histology" data-route>PathMNIST Histology Classification</a></h3>
-              <p>Model comparison project for histology classification with Random Forest, MLP, and CNN baselines.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Medical ML</span>
-                <span>CNN</span>
-                <span>Classification</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/pathmnist-histology" data-route>Open</a>
-                  <a href="https://docs-iota-swart.vercel.app" target="_blank" rel="noreferrer">Live</a>
+                <h4>CNN Depth and Width Study</h4>
+                <p>Fixed-parameter CNN depth and width experiment on CIFAR-10 and CIFAR-100.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>CNNs</span>
+                  <span>CIFAR</span>
+                  <span>Research</span>
                 </div>
-              </footer>
-            </article>
+              </a>
 
-            <article
-              class="project-card project-denoising"
-              data-category="research"
-              data-keywords="histology denoising image pipeline classification medical imaging"
-              data-slug="histology-denoising"
-            >
-              <div class="card-topline">
-                <span class="project-type research">Research</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/histology-denoising" data-route>Histology Denoising Pipeline</a></h3>
-              <p>Interactive report for a histology image classification and denoising workflow.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Denoising</span>
-                <span>Images</span>
-                <span>Pipeline</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/histology-denoising" data-route>Open</a>
-                  <a href="https://histology-denoising-report.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a
+                class="project-card project-pathmnist"
+                href="https://docs-iota-swart.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open PathMNIST Histology Classification"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Research</span>
+                  <span class="visibility">Report</span>
                 </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-yieldcurve"
-              data-category="analysis"
-              data-keywords="finance yield curve recession dashboard fastapi react time series"
-              data-slug="yieldcurve-iq"
-            >
-              <div class="card-topline">
-                <span class="project-type analysis">Analysis</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/yieldcurve-iq" data-route>YieldCurve IQ</a></h3>
-              <p>An interpretable recession-risk dashboard built around yield-curve signals and model validation.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Finance</span>
-                <span>FastAPI</span>
-                <span>React</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/yieldcurve-iq" data-route>Open</a>
-                  <a href="https://yieldcurve-iq.vercel.app" target="_blank" rel="noreferrer">Live</a>
+                <h4>PathMNIST Histology Classification</h4>
+                <p>Histology classifier comparison across Random Forest, MLP, and CNN models.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Medical ML</span>
+                  <span>CNN</span>
+                  <span>Classification</span>
                 </div>
-              </footer>
-            </article>
+              </a>
 
-            <article
-              class="project-card project-gradient"
-              data-category="analysis"
-              data-keywords="data visualisation gradient lab gradient descent optimizer learning rates loss landscape"
-              data-slug="gradient-lab"
-            >
-              <div class="card-topline">
-                <span class="project-type analysis">Analysis</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/gradient-lab" data-route>Gradient Lab</a></h3>
-              <p>Interactive gradient descent visualizer for optimizers, learning rates, and loss landscapes.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Visualization</span>
-                <span>Optimization</span>
-                <span>Learning</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/gradient-lab" data-route>Open</a>
-                  <a href="https://data-visualisation-gamma.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a
+                class="project-card project-denoising"
+                href="https://histology-denoising-report.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Histology Denoising Pipeline"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Research</span>
+                  <span class="visibility">Report</span>
                 </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-disaster"
-              data-category="apps"
-              data-keywords="ai disaster response intelligence emergency app ideas"
-              data-slug="disaster-response-ai"
-            >
-              <div class="card-topline">
-                <span class="project-type apps">App</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/disaster-response-ai" data-route>AI Disaster-Response Intelligence</a></h3>
-              <p>A concept app for turning crisis signals into clearer operational intelligence.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>AI</span>
-                <span>Response</span>
-                <span>Prototype</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/disaster-response-ai" data-route>Open</a>
-                  <a href="https://ideas-mauve.vercel.app" target="_blank" rel="noreferrer">Live</a>
+                <h4>Histology Denoising Pipeline</h4>
+                <p>Histology image classification and denoising pipeline report.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Denoising</span>
+                  <span>Images</span>
+                  <span>Pipeline</span>
                 </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-chess"
-              data-category="analysis"
-              data-keywords="chess analysis extension engine openings stockfish lichess post game coach"
-              data-slug="chess-analysis"
-            >
-              <div class="card-topline">
-                <span class="project-type analysis">Extension</span>
-                <span class="visibility">Chrome</span>
-              </div>
-              <h3><a href="/projects/chess-analysis" data-route>Post-Game Chess Coach</a></h3>
-              <p>Local Stockfish review for Chess.com and Lichess games, packaged as a browser extension.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Chess</span>
-                <span>Chrome</span>
-                <span>Stockfish</span>
-              </div>
-              <footer class="card-footer">
-                <span>Published</span>
-                <div class="card-links">
-                  <a href="/projects/chess-analysis" data-route>Open</a>
-                  <a
-                    href="https://chromewebstore.google.com/detail/post-game-chess-coach/afddbohlglllnfdjhgdojbdalbfnnbaj"
-                    target="_blank"
-                    rel="noreferrer"
-                  >Chrome Store</a>
-                </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-cct"
-              data-category="apps"
-              data-keywords="cct chess app tactics trainer checks captures threats app store"
-              data-slug="cct-app"
-            >
-              <div class="card-topline">
-                <span class="project-type apps">App</span>
-                <span class="visibility">App Store</span>
-              </div>
-              <h3><a href="/projects/cct-app" data-route>CCT Chess</a></h3>
-              <p>An iOS tactics trainer for building the habit of scanning checks, captures, and threats.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>iOS</span>
-                <span>Tactics</span>
-                <span>Offline</span>
-              </div>
-              <footer class="card-footer">
-                <span>Published</span>
-                <div class="card-links">
-                  <a href="/projects/cct-app" data-route>Open</a>
-                  <a
-                    href="https://apps.apple.com/cn/app/id6779518928?ct=Tap872981"
-                    target="_blank"
-                    rel="noreferrer"
-                  >App Store</a>
-                </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-northmate"
-              data-category="apps"
-              data-keywords="northmate app friend compass direction distance freshness"
-              data-slug="northmate"
-            >
-              <div class="card-topline">
-                <span class="project-type apps">App</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/northmate" data-route>Northmate</a></h3>
-              <p>An iPhone friend compass that shows direction, distance, and freshness for accepted friends.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>iPhone</span>
-                <span>Friends</span>
-                <span>Compass</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/northmate" data-route>Open</a>
-                  <a href="https://getnorthmate.com/" target="_blank" rel="noreferrer">Website</a>
-                </div>
-              </footer>
-            </article>
-
-            <article
-              class="project-card project-looksmatched"
-              data-category="personal"
-              data-keywords="looksmatched video chat social matching invite only adults"
-              data-slug="looksmatched"
-            >
-              <div class="card-topline">
-                <span class="project-type personal">Personal</span>
-                <span class="visibility">Vercel</span>
-              </div>
-              <h3><a href="/projects/looksmatched" data-route>Looksmatched</a></h3>
-              <p>An invite-only social prototype with a direct landing page for the public concept.</p>
-              <div class="tags" aria-label="Project tags">
-                <span>Social</span>
-                <span>Landing</span>
-                <span>Prototype</span>
-              </div>
-              <footer class="card-footer">
-                <span>Live</span>
-                <div class="card-links">
-                  <a href="/projects/looksmatched" data-route>Open</a>
-                  <a href="https://looksmatched-silk.vercel.app" target="_blank" rel="noreferrer">Live</a>
-                </div>
-              </footer>
-            </article>
-          </div>
-
-          <p class="empty-state" id="empty-state" hidden>No projects match that filter.</p>
-        </section>
-
-        <section class="project-detail" id="project-detail" aria-live="polite" hidden>
-          <div class="detail-shell">
-            <a class="back-link" href="/#projects" data-route>Back to projects</a>
-            <div class="detail-heading">
-              <div>
-                <p class="detail-type" id="detail-type">Project</p>
-                <h2 id="detail-title">Project title</h2>
-              </div>
-              <a class="button primary" id="detail-primary-link" href="/#projects" data-route>Open project</a>
+              </a>
             </div>
-            <p class="detail-summary" id="detail-summary"></p>
-            <div class="detail-grid">
-              <div>
-                <h3>What it is</h3>
-                <p id="detail-body"></p>
-              </div>
-              <div>
-                <h3>Links</h3>
-                <div class="detail-links" id="detail-links"></div>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="research" class="notes-section" aria-labelledby="research-title">
-          <div>
-            <h2 id="research-title">Research Notes</h2>
-            <p>
-              This section is for paper notes, experiment logs, benchmark writeups,
-              datasets, model cards, or any project where the method matters as much as
-              the demo.
-            </p>
-          </div>
-          <a class="button" href="/#projects" data-route>View project archive</a>
+          <section class="project-group" aria-labelledby="analysis-title">
+            <h3 id="analysis-title">Analysis And Tools</h3>
+            <div class="project-grid">
+              <a
+                class="project-card project-yieldcurve"
+                href="https://yieldcurve-iq.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open YieldCurve IQ"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Analysis</span>
+                  <span class="visibility">Dashboard</span>
+                </div>
+                <h4>YieldCurve IQ</h4>
+                <p>Recession-risk dashboard using yield-curve time series and model validation.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Finance</span>
+                  <span>FastAPI</span>
+                  <span>React</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-gradient"
+                href="https://data-visualisation-gamma.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Gradient Lab"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Tool</span>
+                  <span class="visibility">Visualizer</span>
+                </div>
+                <h4>Gradient Lab</h4>
+                <p>Gradient descent visualizer for optimizers, learning rates, and loss landscapes.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Visualization</span>
+                  <span>Optimization</span>
+                  <span>Learning</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-chess"
+                href="https://chromewebstore.google.com/detail/post-game-chess-coach/afddbohlglllnfdjhgdojbdalbfnnbaj"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Post-Game Chess Coach"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Extension</span>
+                  <span class="visibility">Chrome</span>
+                </div>
+                <h4>Post-Game Chess Coach</h4>
+                <p>Chrome extension for post-game Chess.com and Lichess analysis with Stockfish.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Chess</span>
+                  <span>Chrome</span>
+                  <span>Stockfish</span>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <section class="project-group" aria-labelledby="apps-title">
+            <h3 id="apps-title">Apps</h3>
+            <div class="project-grid">
+              <a
+                class="project-card project-cct"
+                href="https://apps.apple.com/cn/app/id6779518928?ct=Tap872981"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open CCT Chess"
+              >
+                <div class="card-topline">
+                  <span class="project-type">App</span>
+                  <span class="visibility">App Store</span>
+                </div>
+                <h4>CCT Chess</h4>
+                <p>iOS tactics trainer for checks, captures, and threats.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>iOS</span>
+                  <span>Tactics</span>
+                  <span>Chess</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-northmate"
+                href="https://getnorthmate.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Northmate"
+              >
+                <div class="card-topline">
+                  <span class="project-type">App</span>
+                  <span class="visibility">Website</span>
+                </div>
+                <h4>Northmate</h4>
+                <p>iPhone friend compass showing direction, distance, and freshness.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>iPhone</span>
+                  <span>Friends</span>
+                  <span>Compass</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-disaster"
+                href="https://ideas-mauve.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open AI Disaster-Response Intelligence"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Prototype</span>
+                  <span class="visibility">Vercel</span>
+                </div>
+                <h4>AI Disaster-Response Intelligence</h4>
+                <p>Prototype for disaster-response information triage.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>AI</span>
+                  <span>Response</span>
+                  <span>Prototype</span>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <section class="project-group" aria-labelledby="personal-title">
+            <h3 id="personal-title">Personal</h3>
+            <div class="project-grid">
+              <a
+                class="project-card project-looksmatched"
+                href="https://looksmatched-silk.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Looksmatched"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Personal</span>
+                  <span class="visibility">Vercel</span>
+                </div>
+                <h4>Looksmatched</h4>
+                <p>Invite-only social landing page prototype.</p>
+                <div class="tags" aria-label="Project tags">
+                  <span>Social</span>
+                  <span>Landing</span>
+                  <span>Prototype</span>
+                </div>
+              </a>
+            </div>
+          </section>
         </section>
       </main>
 
       <footer id="contact" class="site-footer">
         <div>
-          <strong>Michael Y</strong>
-          <p>Research projects, apps, chess tooling, and useful experiments.</p>
+          <h2>Contact</h2>
+          <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
         </div>
-        <div class="footer-links">
-          <a href="/#projects" data-route>Projects</a>
-          <a href="/#contact" data-route>Contact</a>
-        </div>
+        <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
       </footer>
     </div>
-
-    <script src="/script.js"></script>
   </body>
 </html>
