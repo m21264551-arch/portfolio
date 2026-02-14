@@ -228,6 +228,7 @@ h1 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.88)),
     linear-gradient(135deg, var(--card-tint), #ffffff 58%);
   box-shadow: 0 1px 0 rgba(20, 31, 54, 0.04);
+  cursor: pointer;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -240,16 +241,6 @@ h1 {
   height: 4px;
   background: var(--card-accent);
   content: "";
-}
-
-.project-card::after {
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  color: var(--card-accent);
-  font-size: 0.86rem;
-  font-weight: 760;
-  content: "Open";
 }
 
 .project-card:hover,
@@ -379,7 +370,7 @@ h1 {
   flex-wrap: wrap;
   gap: 7px;
   margin-top: auto;
-  padding: 8px 56px 0 0;
+  padding-top: 8px;
 }
 
 .tags span {
