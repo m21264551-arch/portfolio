@@ -1,11 +1,5 @@
 {
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/projects/:path*",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/styles.css",

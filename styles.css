@@ -314,13 +314,6 @@ h1 {
   --card-tint: #fff4f7;
 }
 
-.project-looksmatched {
-  --card-accent: #db2777;
-  --card-accent-soft: #ffe4f0;
-  --card-border: #efb0cd;
-  --card-tint: #fff3f8;
-}
-
 .card-topline {
   display: flex;
   align-items: center;
@@ -359,6 +352,13 @@ h1 {
   line-height: 1.2;
 }
 
+.card-main-link::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  content: "";
+}
+
 .project-card p {
   margin-bottom: 18px;
   color: var(--muted);
@@ -377,6 +377,33 @@ h1 {
   padding: 0 8px;
   color: color-mix(in srgb, var(--card-accent) 58%, #111827);
   background: color-mix(in srgb, var(--card-accent-soft) 74%, #ffffff);
+}
+
+.card-actions {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.card-actions a {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--card-accent) 36%, var(--border));
+  border-radius: 6px;
+  color: var(--card-accent);
+  background: rgba(255, 255, 255, 0.76);
+  font-size: 0.84rem;
+  font-weight: 760;
+}
+
+.card-actions a:hover {
+  color: color-mix(in srgb, var(--card-accent) 74%, #111827);
+  border-color: var(--card-accent);
 }
 
 .site-footer {
