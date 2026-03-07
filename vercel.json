@@ -2,7 +2,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/styles.css",
+      "source": "/styles-v2.css",
       "headers": [
         {
           "key": "Cache-Control",

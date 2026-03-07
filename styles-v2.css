@@ -244,6 +244,7 @@ h1 {
 }
 
 .project-card:hover,
+.project-card:focus-within,
 .project-card:focus-visible {
   color: var(--text);
   border-color: var(--card-accent);
