@@ -10,4 +10,4 @@ Deploy the folder as a static Vercel project.
 
 Project cards are defined in `index.html`. Each card links directly to its public project page, store listing, or deployed app.
 
-Research paper PDFs live in `papers/`.
+Research PDFs live in `papers/`. Research projects without a PDF link to their public HTML paper.
