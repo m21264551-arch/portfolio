@@ -15,44 +15,36 @@
     />
     <meta property="og:type" content="website" />
     <title>Michael Y - Portfolio</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111827'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='20' font-weight='700' fill='white'%3EMY%3C/text%3E%3C/svg%3E"
-    />
     <link rel="stylesheet" href="/styles-v2.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar" aria-label="Primary">
-        <a class="brand" href="/" aria-label="Michael Y home">
-          <span class="brand-mark" aria-hidden="true">MY</span>
-          <span>Michael Y</span>
-        </a>
+        <div class="contact-strip" aria-label="Contact">
+          <a class="brand" href="/" aria-label="Michael Y home">Michael Y</a>
+          <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
+          <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
         <nav class="topnav">
-          <a href="#projects">Projects</a>
           <a href="#research">Research</a>
-          <a href="#contact">Contact</a>
+          <a href="#projects">Projects</a>
+          <a href="#apps">Apps</a>
         </nav>
       </header>
 
       <main>
         <section class="profile-hero" aria-labelledby="profile-title">
-          <div class="avatar" aria-hidden="true">MY</div>
           <div class="profile-copy">
             <p class="handle">@michaely</p>
             <h1 id="profile-title">Michael Y</h1>
             <p class="summary">Research reports, apps, chess tools, and web projects.</p>
-            <div class="profile-links" aria-label="Profile links">
-              <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
-              <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
           </div>
         </section>
 
-        <section id="projects" class="work-section" aria-labelledby="projects-title">
+        <section class="work-section" aria-labelledby="work-title">
           <div class="section-heading">
             <p class="eyebrow">Portfolio</p>
-            <h2 id="projects-title">Projects</h2>
+            <h2 id="work-title">Work</h2>
           </div>
 
           <section id="research" class="project-group" aria-labelledby="research-title">
@@ -138,8 +130,8 @@
             </div>
           </section>
 
-          <section class="project-group" aria-labelledby="analysis-title">
-            <h3 id="analysis-title">Analysis &amp; Tools</h3>
+          <section id="projects" class="project-group" aria-labelledby="projects-title">
+            <h3 id="projects-title">Projects</h3>
             <div class="project-grid">
               <a
                 class="project-card project-yieldcurve"
@@ -203,7 +195,7 @@
             </div>
           </section>
 
-          <section class="project-group" aria-labelledby="apps-title">
+          <section id="apps" class="project-group" aria-labelledby="apps-title">
             <h3 id="apps-title">Apps</h3>
             <div class="project-grid">
               <a
@@ -270,12 +262,8 @@
         </section>
       </main>
 
-      <footer id="contact" class="site-footer">
-        <div>
-          <h2>Contact</h2>
-          <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
-        </div>
-        <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
+      <footer class="site-footer">
+        <span>Michael Y</span>
       </footer>
     </div>
   </body>
