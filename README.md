@@ -4,7 +4,7 @@ Personal portfolio for research reports, apps, chess tools, and web projects.
 
 ## Deploy
 
-Deploy the folder as a static Vercel project.
+Deploy the folder as a static site.
 
 ## Customize
 

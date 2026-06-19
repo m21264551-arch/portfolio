@@ -25,17 +25,11 @@
           <a href="mailto:m21264551@gmail.com">m21264551@gmail.com</a>
           <a href="https://github.com/m21264551-arch" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-        <nav class="topnav">
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#apps">Apps</a>
-        </nav>
       </header>
 
       <main>
         <section class="profile-hero" aria-labelledby="profile-title">
           <div class="profile-copy">
-            <p class="handle">@michaely</p>
             <h1 id="profile-title">Michael Y</h1>
             <p class="summary">Research reports, apps, chess tools, and web projects.</p>
           </div>
@@ -66,6 +60,7 @@
                   >CNN Depth and Width Study</a>
                 </h4>
                 <p>Fixed-parameter CNN depth and width experiment on CIFAR-10 and CIFAR-100.</p>
+                <div class="motion-preview preview-cnn" aria-hidden="true"></div>
                 <div class="tags" aria-label="Project tags">
                   <span>CNNs</span>
                   <span>CIFAR</span>
@@ -92,6 +87,7 @@
                   >PathMNIST Histology Classification</a>
                 </h4>
                 <p>Histology classifier comparison across Random Forest, MLP, and CNN models.</p>
+                <div class="motion-preview preview-path" aria-hidden="true"></div>
                 <div class="tags" aria-label="Project tags">
                   <span>Medical ML</span>
                   <span>CNN</span>
@@ -118,6 +114,7 @@
                   >Histology Denoising Pipeline</a>
                 </h4>
                 <p>Histology image classification and denoising pipeline report.</p>
+                <div class="motion-preview preview-denoise" aria-hidden="true"></div>
                 <div class="tags" aria-label="Project tags">
                   <span>Denoising</span>
                   <span>Images</span>
@@ -146,10 +143,47 @@
                 </div>
                 <h4>YieldCurve IQ</h4>
                 <p>Recession-risk dashboard using yield-curve time series and model validation.</p>
+                <div class="motion-preview preview-yield" aria-hidden="true">
+                  <svg viewBox="0 0 160 64" focusable="false">
+                    <path class="chart-grid" d="M12 48H148M12 32H148M12 16H148" fill="none" />
+                    <polyline class="chart-line" points="12,42 38,36 62,44 88,24 116,18 148,28" fill="none" />
+                    <circle class="chart-dot" cx="12" cy="42" r="4" />
+                  </svg>
+                </div>
                 <div class="tags" aria-label="Project tags">
                   <span>Finance</span>
                   <span>FastAPI</span>
                   <span>React</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-network"
+                href="https://network-analysis-toolkit.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Network Analysis Toolkit"
+              >
+                <div class="card-topline">
+                  <span class="project-type">Analysis</span>
+                  <span class="visibility">Dashboard</span>
+                </div>
+                <h4>Network Analysis Toolkit</h4>
+                <p>Community detection, centrality, influence spread, and link-prediction dashboard.</p>
+                <div class="motion-preview preview-network" aria-hidden="true">
+                  <svg viewBox="0 0 160 64" focusable="false">
+                    <path class="network-edge" d="M30 38 62 18 94 34 130 18M62 18 72 50M72 50 130 18M30 38 72 50" fill="none" />
+                    <circle class="network-node node-a" cx="30" cy="38" r="6" />
+                    <circle class="network-node node-b" cx="62" cy="18" r="7" />
+                    <circle class="network-node node-c" cx="94" cy="34" r="6" />
+                    <circle class="network-node node-d" cx="130" cy="18" r="7" />
+                    <circle class="network-node node-e" cx="72" cy="50" r="6" />
+                  </svg>
+                </div>
+                <div class="tags" aria-label="Project tags">
+                  <span>Networks</span>
+                  <span>NetworkX</span>
+                  <span>Graph ML</span>
                 </div>
               </a>
 
@@ -166,6 +200,9 @@
                 </div>
                 <h4>Gradient Lab</h4>
                 <p>Gradient descent visualizer for optimizers, learning rates, and loss landscapes.</p>
+                <div class="motion-preview preview-gradient" aria-hidden="true">
+                  <span class="gradient-dot"></span>
+                </div>
                 <div class="tags" aria-label="Project tags">
                   <span>Visualization</span>
                   <span>Optimization</span>
@@ -174,22 +211,23 @@
               </a>
 
               <a
-                class="project-card project-chess"
-                href="https://chromewebstore.google.com/detail/post-game-chess-coach/afddbohlglllnfdjhgdojbdalbfnnbaj"
+                class="project-card project-disaster"
+                href="https://ideas-mauve.vercel.app"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Open Post-Game Chess Coach"
+                aria-label="Open AI Disaster-Response Intelligence"
               >
                 <div class="card-topline">
-                  <span class="project-type">Extension</span>
-                  <span class="visibility">Chrome</span>
+                  <span class="project-type">Prototype</span>
+                  <span class="visibility">Demo</span>
                 </div>
-                <h4>Post-Game Chess Coach</h4>
-                <p>Chrome extension for post-game Chess.com and Lichess analysis with Stockfish.</p>
+                <h4>AI Disaster-Response Intelligence</h4>
+                <p>Australian bushfire risk model and disaster-response map demo.</p>
+                <div class="motion-preview preview-disaster" aria-hidden="true"></div>
                 <div class="tags" aria-label="Project tags">
-                  <span>Chess</span>
-                  <span>Chrome</span>
-                  <span>Stockfish</span>
+                  <span>AI</span>
+                  <span>Maps</span>
+                  <span>Response</span>
                 </div>
               </a>
             </div>
@@ -211,6 +249,9 @@
                 </div>
                 <h4>CCT Chess</h4>
                 <p>iOS tactics trainer for checks, captures, and threats.</p>
+                <div class="motion-preview preview-chess preview-rook" aria-hidden="true">
+                  <span class="chess-piece rook-piece"></span>
+                </div>
                 <div class="tags" aria-label="Project tags">
                   <span>iOS</span>
                   <span>Tactics</span>
@@ -231,6 +272,9 @@
                 </div>
                 <h4>Northmate</h4>
                 <p>iPhone friend compass showing direction, distance, and freshness.</p>
+                <div class="motion-preview preview-compass" aria-hidden="true">
+                  <span class="compass-needle"></span>
+                </div>
                 <div class="tags" aria-label="Project tags">
                   <span>iPhone</span>
                   <span>Friends</span>
@@ -239,32 +283,31 @@
               </a>
 
               <a
-                class="project-card project-disaster"
-                href="https://ideas-mauve.vercel.app"
+                class="project-card project-chess"
+                href="https://chromewebstore.google.com/detail/post-game-chess-coach/afddbohlglllnfdjhgdojbdalbfnnbaj"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Open AI Disaster-Response Intelligence"
+                aria-label="Open Chess Analysis Extension"
               >
                 <div class="card-topline">
-                  <span class="project-type">Prototype</span>
-                  <span class="visibility">Vercel</span>
+                  <span class="project-type">Extension</span>
+                  <span class="visibility">Chrome</span>
                 </div>
-                <h4>AI Disaster-Response Intelligence</h4>
-                <p>Prototype for disaster-response information triage.</p>
+                <h4>Chess Analysis Extension</h4>
+                <p>Chrome extension for post-game Chess.com and Lichess analysis with Stockfish.</p>
+                <div class="motion-preview preview-chess preview-bishop" aria-hidden="true">
+                  <span class="chess-piece bishop-piece"></span>
+                </div>
                 <div class="tags" aria-label="Project tags">
-                  <span>AI</span>
-                  <span>Response</span>
-                  <span>Prototype</span>
+                  <span>Chess</span>
+                  <span>Chrome</span>
+                  <span>Stockfish</span>
                 </div>
               </a>
             </div>
           </section>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <span>Michael Y</span>
-      </footer>
     </div>
   </body>
 </html>
