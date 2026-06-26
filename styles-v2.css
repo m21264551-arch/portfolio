@@ -2,12 +2,9 @@
   color-scheme: light;
   --bg: #f7f8fb;
   --surface: #ffffff;
-  --surface-soft: #fbfcff;
   --text: #111827;
   --muted: #5b6472;
-  --faint: #8a94a6;
   --border: #d9dee8;
-  --border-strong: #c7cfdd;
   --blue: #2563eb;
   --shadow: 0 18px 50px rgba(20, 31, 54, 0.08);
   --radius: 8px;
@@ -235,9 +232,7 @@ h1 {
   z-index: 2;
 }
 
-.project-card:hover,
-.project-card:focus-within,
-.project-card:focus-visible {
+.project-card:is(:hover, :focus-within, :focus-visible) {
   color: var(--text);
   border-color: var(--card-accent);
   background:
@@ -246,9 +241,7 @@ h1 {
   transform: translateY(-3px);
 }
 
-.project-card:hover::after,
-.project-card:focus-within::after,
-.project-card:focus-visible::after {
+.project-card:is(:hover, :focus-within, :focus-visible)::after {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.18)),
     linear-gradient(90deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.08));
@@ -419,9 +412,7 @@ h1 {
     transform 180ms ease;
 }
 
-.project-card:hover .motion-preview,
-.project-card:focus-within .motion-preview,
-.project-card:focus-visible .motion-preview {
+.project-card:is(:hover, :focus-within, :focus-visible) .motion-preview {
   opacity: 0.72;
   transform: scale(1.04);
 }
@@ -953,24 +944,15 @@ h1 {
   animation-play-state: paused;
 }
 
-.project-card:hover .motion-preview,
-.project-card:hover .motion-preview *,
-.project-card:hover .motion-preview::before,
-.project-card:hover .motion-preview::after,
-.project-card:hover .motion-preview *::before,
-.project-card:hover .motion-preview *::after,
-.project-card:focus-within .motion-preview,
-.project-card:focus-within .motion-preview *,
-.project-card:focus-within .motion-preview::before,
-.project-card:focus-within .motion-preview::after,
-.project-card:focus-within .motion-preview *::before,
-.project-card:focus-within .motion-preview *::after,
-.project-card:focus-visible .motion-preview,
-.project-card:focus-visible .motion-preview *,
-.project-card:focus-visible .motion-preview::before,
-.project-card:focus-visible .motion-preview::after,
-.project-card:focus-visible .motion-preview *::before,
-.project-card:focus-visible .motion-preview *::after {
+.project-card:is(:hover, :focus-within, :focus-visible)
+  :is(
+    .motion-preview,
+    .motion-preview *,
+    .motion-preview::before,
+    .motion-preview::after,
+    .motion-preview *::before,
+    .motion-preview *::after
+  ) {
   animation-play-state: running;
 }
 
