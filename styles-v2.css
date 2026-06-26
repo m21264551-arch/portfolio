@@ -611,44 +611,65 @@ h1 {
 }
 
 .preview-chess {
+  --board-cell: 48px;
+  --board-left: calc(50% - 96px);
+  --board-bottom: 42px;
   background:
-    linear-gradient(45deg, color-mix(in srgb, var(--card-accent) 14%, transparent) 25%, transparent 25% 75%, color-mix(in srgb, var(--card-accent) 14%, transparent) 75%),
-    linear-gradient(45deg, color-mix(in srgb, var(--card-accent) 14%, transparent) 25%, transparent 25% 75%, color-mix(in srgb, var(--card-accent) 14%, transparent) 75%),
     linear-gradient(135deg, var(--card-accent-soft), transparent);
-  background-position: 0 0, 48px 48px, 0 0;
-  background-size: 96px 96px, 96px 96px, auto;
 }
 
-.preview-rook::before,
-.preview-bishop::before {
+.preview-chess::before {
   position: absolute;
-  width: 48px;
-  height: 48px;
-  border-radius: 5px;
-  background: color-mix(in srgb, var(--card-accent) 14%, transparent);
+  left: var(--board-left);
+  bottom: var(--board-bottom);
+  z-index: 0;
+  width: 192px;
+  height: 192px;
+  border: 1px solid color-mix(in srgb, var(--card-accent) 20%, transparent);
+  border-radius: 10px;
+  background:
+    conic-gradient(
+      from 90deg,
+      color-mix(in srgb, var(--card-accent) 20%, #ffffff) 0 25%,
+      rgba(255, 255, 255, 0.46) 0 50%,
+      color-mix(in srgb, var(--card-accent) 20%, #ffffff) 0 75%,
+      rgba(255, 255, 255, 0.46) 0
+    );
+  background-size: 96px 96px;
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--card-accent) 20%, transparent);
   content: "";
 }
 
-.preview-rook::before {
-  left: 28px;
-  bottom: 52px;
-  box-shadow:
-    96px 0 0 color-mix(in srgb, var(--card-accent) 12%, transparent),
-    96px -96px 0 color-mix(in srgb, var(--card-accent) 18%, transparent);
+.preview-rook::after,
+.preview-bishop::after {
+  position: absolute;
+  left: var(--board-left);
+  bottom: var(--board-bottom);
+  z-index: 1;
+  width: var(--board-cell);
+  height: var(--board-cell);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--card-accent) 18%, transparent);
+  content: "";
 }
 
-.preview-bishop::before {
-  left: 28px;
-  bottom: 52px;
+.preview-rook::after {
   box-shadow:
-    48px -48px 0 color-mix(in srgb, var(--card-accent) 12%, transparent),
-    96px -96px 0 color-mix(in srgb, var(--card-accent) 18%, transparent);
+    96px 0 0 color-mix(in srgb, var(--card-accent) 15%, transparent),
+    96px -96px 0 color-mix(in srgb, var(--card-accent) 22%, transparent);
+}
+
+.preview-bishop::after {
+  box-shadow:
+    48px -48px 0 color-mix(in srgb, var(--card-accent) 15%, transparent),
+    96px -96px 0 color-mix(in srgb, var(--card-accent) 22%, transparent);
 }
 
 .chess-piece {
   position: absolute;
-  left: 38px;
-  bottom: 62px;
+  left: calc(var(--board-left) + var(--piece-offset-x, 9px));
+  bottom: calc(var(--board-bottom) + var(--piece-offset-y, 9px));
+  z-index: 2;
   width: 30px;
   height: 30px;
   background: var(--card-accent);
@@ -657,6 +678,8 @@ h1 {
 }
 
 .rook-piece {
+  --piece-offset-x: 9px;
+  --piece-offset-y: 8.5px;
   width: 30px;
   height: 31px;
   border-radius: 4px 4px 7px 7px;
@@ -688,6 +711,8 @@ h1 {
 }
 
 .bishop-piece {
+  --piece-offset-x: 10px;
+  --piece-offset-y: 6px;
   width: 28px;
   height: 36px;
   border-radius: 50% 50% 42% 42%;
